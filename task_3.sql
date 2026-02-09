@@ -1,1 +1,4 @@
-mysql -u root -p alx_book_store < task_3.sql
+-- task_3.sql
+-- This script lists all tables in the database passed as argument
+
+SHOW TABLES;
