@@ -1,9 +1,7 @@
--- task_4.sql
--- Show full description of the Books table in alx_book_store
+-- task_5.sql
+-- Insert a single row into the Customers table in alx_book_store
 
 USE alx_book_store;
 
-SELECT COLUMN_NAME, COLUMN_TYPE, IS_NULLABLE, COLUMN_KEY, EXTRA
-FROM INFORMATION_SCHEMA.COLUMNS
-WHERE TABLE_SCHEMA = 'alx_book_store'
-  AND TABLE_NAME = 'Books';
+INSERT INTO Customers (customer_id, customer_name, email, address)
+VALUES (1, 'Cole Baidoo', 'cbaidoo@sandtech.com', '123 Happiness Ave.');
